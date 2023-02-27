@@ -5,99 +5,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    z-index: 2;
 }
 
+/*==============
+ Container
+ ==============*/
 .container{
     background: url('../imgs/BG.png') center center no-repeat;
     background-size: cover;
     overflow: hidden;
-}
-
-.container__two{
-    background: url('../imgs/BG.png') center center no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-}
-
-.container__img{
-    width: 55%;
-    height: 100%;
-}
-
-.cards{
-    position: absolute;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    right: 0;
-    top: 0;
-    padding-right: 90px;
-}
-
-.cards__item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 50px;
-    gap: 10px;
-    width: 528px;
-    left: 822px;
-    top: 210px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 0px 18px #EAF7F7;
-    border-radius: 24px;
-}
-
-.cards__item h6{
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 106%;
-    text-transform: uppercase;
-    color: #193C3F;
-}
-
-.cards__item h1{
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 106%;
-    color: #193C3F;
-}
-
-.cards__item p{
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    color: #193C3F;
-}
-
-.cards__item a{
-    padding: 16px 50px;
-    gap: 10px;
-    background: #3CB27F;
-    border-radius: 12px;
-    border: none;
-    outline: none;  
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 19px;
 }
 
 .main{
@@ -195,6 +111,8 @@
 
 .main-content{
     width: 520px;
+    z-index: 2;
+    position: relative;
 }
 
 .master-class{
@@ -224,6 +142,22 @@
     align-items: flex-start;
     padding: 18px;
     gap: 16px;
+}
+
+.master__img{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    background: #F3FAFA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.master__img img{
+    width: 100%;
 }
 
 .master-class-top__card p{
@@ -304,6 +238,9 @@
     cursor: pointer;
 }
 
+/* ===================
+   Form
+=================== */
 .form-box{
     width: 100%;
     height: 100%;
@@ -324,8 +261,6 @@
 .form-box.active{
     opacity: 1;
     transform: scale(1);
-    /* display: flex; */
-    
 }
 
 .form{
@@ -411,6 +346,101 @@
 .button-card{
     display: none;
 }
+
+/* ==============
+Container__two
+================= */
+.container__two{
+    background: url('../imgs/BG.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.container__img{
+    width: 55%;
+    height: 100%;
+}
+
+.cards{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 0;
+    padding-right: 90px;
+}
+
+.cards__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 10px;
+    width: 528px;
+    left: 822px;
+    top: 210px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px #EAF7F7;
+    border-radius: 24px;
+}
+
+.cards__item h6{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 106%;
+    text-transform: uppercase;
+    color: #193C3F;
+}
+
+.cards__item h1{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 106%;
+    color: #193C3F;
+}
+
+.cards__item p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #193C3F;
+}
+
+.cards__item a{
+    padding: 16px 50px;
+    gap: 10px;
+    background: #3CB27F;
+    border-radius: 12px;
+    border: none;
+    outline: none;  
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 19px;
+}
+
+
+
+/* ==================
+  Responsive
+  ==================== */
 
 @media (max-width: 1220px) {
     .main{
@@ -525,7 +555,6 @@
         font-size: 18px;
         color: #FFFFFF;
     }
-      
 }
 
 @media (max-width: 600px) {
